@@ -966,7 +966,6 @@ class App extends React.Component {
   }
   
   search(e) {
-    console.log(e.target.value);
     this.setState({ searchTerm: e.target.value });
   }
   sortFunction(sortValue,typeofSort, event) {
