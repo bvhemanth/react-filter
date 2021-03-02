@@ -994,8 +994,8 @@ class App extends React.Component {
             .filter(user => {
               console.log(user)
               return (
-                user.insurance_type.toLowerCase().indexOf(this.state.searchTerm) > -1 ||
-                user.provider['en-ae']?.name?.toLowerCase().indexOf(this.state.searchTerm)>-1
+                user.insurance_type.toLowerCase().indexOf(this.state.searchTerm.toLowerCase()) > -1 ||
+                user.provider['en-ae']?.name?.toLowerCase().indexOf(this.state.searchTerm.toLowerCase())>-1
               );
             }).sort((a,b)=>{
               let aVal = a[this.state.sortValue];
